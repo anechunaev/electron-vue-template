@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import createAppRouter from './client/router';
-import Root from './client/root.vue';
+import createAppRouter from './render/router';
+import Root from './render/root.vue';
 
 const router = createAppRouter();
 

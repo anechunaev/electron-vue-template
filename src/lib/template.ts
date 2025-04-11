@@ -1,4 +1,4 @@
-import { assets, dist } from '../../common/url';
+import { assets, dist } from '../lib/url';
 
 export function mainScreen() {
 	return `<!DOCTYPE html>

@@ -1,10 +1,11 @@
 import { app, screen, BrowserWindow } from 'electron';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import * as AppUrl from './common/url';
-import { handleCustomProtocol } from './server/lib/protocol';
+import * as AppUrl from './lib/url';
+import { handleCustomProtocol } from './lib/protocol';
 import pkg from '../package.json';
 
+// @ts-ignore
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

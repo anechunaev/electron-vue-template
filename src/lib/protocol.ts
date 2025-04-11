@@ -1,7 +1,7 @@
 import path from 'node:path';
 import url from 'node:url';
 import { app, protocol, net } from 'electron';
-import * as AppUrl from '../../common/url';
+import * as AppUrl from '../lib/url';
 import * as AppPath from './path';
 import { mainScreen } from './template';
 
