@@ -1,0 +1,38 @@
+{
+	"compilerOptions": {
+		"target": "es2020",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"jsx": "preserve",
+		"jsxImportSource": "vue",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"lib": [
+			"es2018",
+			"dom"
+		],
+		"baseUrl": "./src",
+		"skipLibCheck": true
+	},
+	"exclude": [
+		"node_modules",
+		"dist/**/*.js",
+		"config",
+		"static",
+		"!dist/public/manifest.json"
+	],
+	"include": [
+		"./package.json",
+		"src/*",
+		"./globals.d.ts"
+	]
+}

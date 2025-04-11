@@ -1,0 +1,43 @@
+{
+  "name": "electron-vue-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && webpack --mode development --config ./config/webpack.dev.js",
+    "build": "npm run clean && webpack --mode production --config ./config/webpack.prod.js",
+    "watch": "npm run clean && npm run dev -- --watch",
+    "start": "electron ./dist/public/main.js",
+    "clean": "rm -rf ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Artem Nechunaev <artem@nechunaev.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "electron": "^35.1.5",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^10.1.5",
+    "prettier": "^3.5.3",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "swc-loader": "^0.2.6",
+    "terser-webpack-plugin": "^5.3.14",
+    "typescript": "^5.8.3",
+    "vue-loader": "^17.4.2",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1",
+    "webpack-manifest-plugin": "^5.0.1"
+  },
+  "app": {
+    "protocol": "app",
+    "defaultTitle": "Electron Vue Template"
+  }
+}
