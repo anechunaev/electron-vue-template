@@ -1,7 +1,7 @@
 {
   "name": "electron-vue-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/public/main.js",
   "scripts": {
     "dev": "npm run clean && webpack --mode development --config ./config/webpack.dev.js",
     "build": "npm run clean && webpack --mode production --config ./config/webpack.prod.js",

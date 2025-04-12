@@ -6,15 +6,6 @@ module.exports = ({ isScss = true, isServer = false, exclude, prodEnv = true }) 
 	use: [
 		isServer
 			? undefined
-			// : prodEnv
-			// 	? {
-			// 			loader: MiniCssExtractPlugin.loader,
-			// 			options: {
-			// 				publicPath: '/dist',
-			// 				emit: !isServer,
-			// 			},
-			// 		}
-			// 	: 'style-loader',
 			: {
 				loader: MiniCssExtractPlugin.loader,
 				options: {
@@ -25,20 +16,6 @@ module.exports = ({ isScss = true, isServer = false, exclude, prodEnv = true }) 
 		{
 			loader: 'css-loader',
 			options: {
-				// modules: {
-				//     mode: 'local',
-				//     exportOnlyLocals: isServer,
-				//     localIdentName: prodEnv ? '[hash:base64:8]' : '[folder]__[local]___[hash:base64:5]',
-				// },
-				// import: {
-				// 	filter: (url, media, resourcePath) => {
-				// 		if (resourcePath.includes('global.scss')) {
-				// 			return false;
-				// 		}
-
-				// 		return true;
-				// 	},
-				// },
 			},
 		},
 		{
